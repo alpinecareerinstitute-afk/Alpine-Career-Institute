@@ -11,11 +11,40 @@
 <!-- 🔗 WEBSITE LIVE HONE KE BAAD neeche apni site ka poora link likho, tabhi WhatsApp par logo wala card dikhega -->
 <meta property="og:image" content="https://YOUR-SITE-LINK/logo.png">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#0050b3">
+<link rel="apple-touch-icon" href="logo.png">
+<!-- 🔎 Google ke liye jankari. Website live hone ke baad yahan "url": "apni site ka link" bhi jod sakte ho. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "ALPINE Career Institute",
+  "alternateName": "ALPINE Coaching",
+  "description": "CBSE / ICSE coaching for Class 1 to 12 in Kanpur.",
+  "telephone": "+91-8829956645",
+  "email": "alpinecareerinstitute@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sadhana Sadan B-140, UPSIDC Navipur, Near Gauri Hospital",
+    "addressLocality": "Kanpur",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "209311",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.instagram.com/alpinecareerinstitute"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Amit Singh Bhadouria"
+  }
+}
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="pre"><img src="logo.png" alt=""></div>
-<link rel="icon" type="image/png" href="/Alpine-Career-Institute/logo.png">
+
 <header class="nav" id="nav">
   <div class="wrap">
     <a href="index.html" class="brand"><img src="logo.png" alt="ALPINE logo">ALPINE</a>
@@ -37,10 +66,12 @@
 <!-- HERO -->
 <section class="hero">
   <canvas id="net"></canvas>
+  <a href="#about" class="scrollhint" aria-label="Scroll down"><span></span></a>
   <span class="bub b1"></span><span class="bub b2"></span><span class="bub b3"></span><span class="bub b4"></span><span class="bub b5"></span>
   <span class="sym s1">π</span><span class="sym s2">∑</span><span class="sym s3">√x</span><span class="sym s4">E=mc²</span><span class="sym s5">H₂O</span><span class="sym s6">∞</span>
   <div class="wrap">
     <div>
+      <p class="in greet" id="greet"></p>
       <h1 class="in">Climb higher with <span>ALPINE</span></h1>
       <p class="in tag-hi">सही पढ़ें, सही सीखें</p>
       <!-- ✏️ YAHAN APNI TAGLINE LIKHO -->
@@ -158,6 +189,7 @@
 <section id="steps" class="steps">
   <div class="wrap">
     <div class="head"><h2>How to join</h2><p>Four simple steps to start learning with us.</p></div>
+    <div class="stepline" id="stepline"><i></i></div>
     <div class="stepgrid">
       <div class="step"><b>1</b><h3>Contact us</h3><p>Call or message us on WhatsApp.</p></div>
       <div class="step"><b>2</b><h3>Demo class</h3><p>Meet the teachers and see how we teach.</p></div>
@@ -187,7 +219,84 @@
       <h2>Our gallery</h2>
       <p>Classes, celebrations and achievements. Tap any photo to view it full size.</p>
     </div>
-    <div class="gallery" id="gallery-grid"></div>
+    <div class="gallery" id="gallery-grid">
+      <!--
+      ╔══════════════════════════════════════════════════════════════╗
+      ║ 📸 GALLERY KI PHOTO LAGANE KA TAREEKA                        ║
+      ║ 1. Photo isi folder mein rakho (jaise G1.jpg, G2.jpg ...)    ║
+      ║ 2. Neeche ki lines mein src="..." mein usi photo ka naam likho║
+      ║ 3. Nayi photo jodni ho to koi ek <figure> line copy-paste    ║
+      ║    karo aur src badal do. Hatani ho to line delete kar do.   ║
+      ║ 4. class="g-item hide" wali photos "Show more" dabane par aati║
+      ║    hain. Jo pehle dikhani hain unme se "hide" hata do.       ║
+      ║ 5. class="g-item tall" wali photo lambi (portrait) dikhti hai ║
+      ╚══════════════════════════════════════════════════════════════╝
+      -->
+      <!-- 📸 PHOTO 1 -->
+      <figure class="g-item"><span class="ph">Photo 1</span><img src="G1.jpg" alt="ALPINE photo 1" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 2 -->
+      <figure class="g-item tall"><span class="ph">Photo 2</span><img src="G2.jpg" alt="ALPINE photo 2" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 3 -->
+      <figure class="g-item"><span class="ph">Photo 3</span><img src="G3.jpg" alt="ALPINE photo 3" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 4 -->
+      <figure class="g-item"><span class="ph">Photo 4</span><img src="G4.jpg" alt="ALPINE photo 4" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 5 -->
+      <figure class="g-item"><span class="ph">Photo 5</span><img src="G5.jpg" alt="ALPINE photo 5" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 6 -->
+      <figure class="g-item"><span class="ph">Photo 6</span><img src="G6.jpg" alt="ALPINE photo 6" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 7 -->
+      <figure class="g-item tall"><span class="ph">Photo 7</span><img src="G7.jpg" alt="ALPINE photo 7" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 8 -->
+      <figure class="g-item"><span class="ph">Photo 8</span><img src="G8.jpg" alt="ALPINE photo 8" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 9 -->
+      <figure class="g-item"><span class="ph">Photo 9</span><img src="G9.jpg" alt="ALPINE photo 9" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 10 -->
+      <figure class="g-item"><span class="ph">Photo 10</span><img src="G10.jpg" alt="ALPINE photo 10" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 11 -->
+      <figure class="g-item"><span class="ph">Photo 11</span><img src="G11.jpg" alt="ALPINE photo 11" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 12 -->
+      <figure class="g-item tall"><span class="ph">Photo 12</span><img src="G12.jpg" alt="ALPINE photo 12" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 13 -->
+      <figure class="g-item hide"><span class="ph">Photo 13</span><img src="G13.jpg" alt="ALPINE photo 13" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 14 -->
+      <figure class="g-item hide"><span class="ph">Photo 14</span><img src="G14.jpg" alt="ALPINE photo 14" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 15 -->
+      <figure class="g-item hide"><span class="ph">Photo 15</span><img src="G15.jpg" alt="ALPINE photo 15" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 16 -->
+      <figure class="g-item hide"><span class="ph">Photo 16</span><img src="G16.jpg" alt="ALPINE photo 16" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 17 -->
+      <figure class="g-item tall hide"><span class="ph">Photo 17</span><img src="G17.jpg" alt="ALPINE photo 17" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 18 -->
+      <figure class="g-item hide"><span class="ph">Photo 18</span><img src="G18.jpg" alt="ALPINE photo 18" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 19 -->
+      <figure class="g-item hide"><span class="ph">Photo 19</span><img src="G19.jpg" alt="ALPINE photo 19" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 20 -->
+      <figure class="g-item hide"><span class="ph">Photo 20</span><img src="G20.jpg" alt="ALPINE photo 20" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 21 -->
+      <figure class="g-item hide"><span class="ph">Photo 21</span><img src="G21.jpg" alt="ALPINE photo 21" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 22 -->
+      <figure class="g-item tall hide"><span class="ph">Photo 22</span><img src="G22.jpg" alt="ALPINE photo 22" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 23 -->
+      <figure class="g-item hide"><span class="ph">Photo 23</span><img src="G23.jpg" alt="ALPINE photo 23" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 24 -->
+      <figure class="g-item hide"><span class="ph">Photo 24</span><img src="G24.jpg" alt="ALPINE photo 24" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 25 -->
+      <figure class="g-item hide"><span class="ph">Photo 25</span><img src="G25.jpg" alt="ALPINE photo 25" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 26 -->
+      <figure class="g-item hide"><span class="ph">Photo 26</span><img src="G26.jpg" alt="ALPINE photo 26" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 27 -->
+      <figure class="g-item tall hide"><span class="ph">Photo 27</span><img src="G27.jpg" alt="ALPINE photo 27" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 28 -->
+      <figure class="g-item hide"><span class="ph">Photo 28</span><img src="G28.jpg" alt="ALPINE photo 28" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 29 -->
+      <figure class="g-item hide"><span class="ph">Photo 29</span><img src="G29.jpg" alt="ALPINE photo 29" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 30 -->
+      <figure class="g-item hide"><span class="ph">Photo 30</span><img src="G30.jpg" alt="ALPINE photo 30" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 31 -->
+      <figure class="g-item hide"><span class="ph">Photo 31</span><img src="G31.jpg" alt="ALPINE photo 31" loading="lazy" onerror="nextExt(this)"></figure>
+      <!-- 📸 PHOTO 32 -->
+      <figure class="g-item tall hide"><span class="ph">Photo 32</span><img src="G32.jpg" alt="ALPINE photo 32" loading="lazy" onerror="nextExt(this)"></figure>
+    </div>
     <div class="morewrap"><button class="btn" id="gmore">Show more photos</button></div>
   </div>
 </section>
@@ -233,7 +342,8 @@
 <!-- STUDY TOOLS -->
 <section id="tools" class="tools">
   <div class="wrap">
-    <div class="head"><h2>Free study tools</h2><p>Check your percentage and plan your study day.</p></div>
+    <div class="head"><h2>Free study tools</h2><p>15 free tools for students. Pick one below and try it.</p>
+      <p class="thought" id="thought"></p></div>
     <div class="tgrid">
       <div class="tcard">
         <h3>📊 Percentage calculator</h3>
@@ -261,6 +371,81 @@
         <div class="fbtns"><button class="btn small ghost2" id="fPrev" type="button">‹ Prev</button><small id="fCount"></small><button class="btn small" id="fNext" type="button">Next ›</button></div>
         <small class="fhint">Tap the card to see the formula</small>
       </div>
+      <div class="tcard">
+        <h3>🔄 Unit converter</h3>
+        <select id="ucType"></select>
+        <div class="ucrow"><input type="number" id="ucVal" value="1" step="any" aria-label="Value"><select id="ucFrom"></select></div>
+        <button class="btn small ghost2 ucswap" id="ucSwap" type="button">⇅ Swap</button>
+        <div class="ucrow"><input id="ucOut" readonly aria-label="Result"><select id="ucTo"></select></div>
+      </div>
+      <div class="tcard">
+        <h3>⏱️ Focus timer</h3>
+        <div class="timer"><svg viewBox="0 0 120 120"><circle class="tr" cx="60" cy="60" r="52"/><circle class="tp" id="tmRing" cx="60" cy="60" r="52"/></svg><div class="tmtxt" id="tmTxt">25:00</div></div>
+        <div class="tmodes" id="tmModes"><button type="button" data-m="25" class="on">Focus 25</button><button type="button" data-m="5">Break 5</button><button type="button" data-m="15">Long break 15</button></div>
+        <div class="fbtns"><button class="btn small" id="tmStart" type="button">Start</button><button class="btn small ghost2" id="tmReset" type="button">Reset</button></div>
+      </div>
+      <div class="tcard">
+        <h3>⚡ Math Blitz</h3>
+        <div id="mbBox"></div>
+      </div>
+      <div class="tcard">
+        <h3>🧪 Element finder</h3>
+        <input id="elQ" class="dateinp" placeholder="Search: oxygen, Na, 17 ..." autocomplete="off">
+        <div class="elchips" id="elChips"></div>
+        <div class="ptwrap"><div class="ptable" id="elGrid"></div></div>
+        <div class="pcout" id="elOut">Tap an element to see its details.</div>
+      </div>
+      <div class="tcard">
+        <h3>📐 Quadratic solver</h3>
+        <p class="qnote2">Solve ax² + bx + c = 0</p>
+        <div class="qrow"><input type="number" id="qa" placeholder="a" value="1" step="any" aria-label="a"><input type="number" id="qb" placeholder="b" value="-5" step="any" aria-label="b"><input type="number" id="qc" placeholder="c" value="6" step="any" aria-label="c"></div>
+        <div class="pcout" id="qOut"></div>
+      </div>
+      <div class="tcard">
+        <h3>✅ Daily goals</h3>
+        <div class="todoadd"><input id="tdIn" class="dateinp" placeholder="Add a task (e.g. Maths Ch. 4)" maxlength="60"><button class="btn small" id="tdAdd" type="button">Add</button></div>
+        <ul class="todo" id="tdList"></ul>
+        <div class="pbar"><i id="tdBar" style="width:0"></i></div><small id="tdTxt">No tasks yet.</small>
+      </div>
+      <div class="tcard">
+        <h3>🧮 Scientific calculator</h3>
+        <input id="scIn" class="dateinp" placeholder="e.g. sin(30) + 2^3 × √16" autocomplete="off" aria-label="Expression">
+        <div class="scout" id="scOut">0</div>
+        <div class="scbtns" id="scBtns"></div>
+        <label class="scdeg"><input type="checkbox" id="scDeg" checked> Degrees (untick for radians)</label>
+      </div>
+      <div class="tcard">
+        <h3>📏 Geometry calculator</h3>
+        <select id="gmShape"></select>
+        <div class="gmin" id="gmIn"></div>
+        <div class="pcout" id="gmOut">Enter the values to see the answers.</div>
+      </div>
+      <div class="tcard">
+        <h3>🎯 Target marks planner</h3>
+        <p class="qnote2">How many marks do you need in the next exam to reach your target percentage?</p>
+        <div class="tmgrid">
+          <label>Marks scored so far<input type="number" id="tgGot" min="0" placeholder="e.g. 160"></label>
+          <label>Out of (so far)<input type="number" id="tgDone" min="1" placeholder="e.g. 200"></label>
+          <label>Next exam is out of<input type="number" id="tgNext" min="1" placeholder="e.g. 100"></label>
+          <label>Target percentage<input type="number" id="tgPct" min="1" max="100" placeholder="e.g. 85"></label>
+        </div>
+        <div class="pcout" id="tgOut">Fill all four boxes.</div>
+      </div>
+      <div class="tcard" id="dwCard">
+        <h3>🪔 Diwali greeting card</h3>
+        <p class="qnote2">Type your name, pick a style and share a Diwali card with family and friends.</p>
+        <input id="dwName" class="dateinp" maxlength="30" placeholder="Your name (optional)" autocomplete="off">
+        <div class="dwstyle" id="dwStyles"></div>
+        <canvas id="dwCanvas" class="dwcv" width="1080" height="1080"></canvas>
+        <div class="fbtns"><button class="btn small" id="dwDl" type="button">⬇ Download</button><button class="btn small ghost2" id="dwShare" type="button">📤 Share</button></div>
+      </div>
+      <div class="tcard" id="fwChem">
+        <h3>🎆 Why fireworks have colours</h3>
+        <p class="qnote2">Every metal salt burns with its own flame colour. Tap a metal and watch that colour in the sky.</p>
+        <div class="fwchips" id="fwChips"></div>
+        <div class="pcout" id="fwOut">Tap a metal to fire a burst of its colour.</div>
+        <small class="fwsafe">Celebrate safely: light crackers outdoors, keep water nearby and stay with an elder.</small>
+      </div>
     </div>
   </div>
 </section>
@@ -269,6 +454,8 @@
 <section id="faq" class="faq">
   <div class="wrap">
     <div class="head"><h2>Common questions</h2></div>
+    <input id="faqQ" class="dateinp faqsearch" placeholder="Search a question..." autocomplete="off" aria-label="Search questions">
+    <p class="faqnone" id="faqNone" hidden>No matching question. Please call or WhatsApp us.</p>
     <details><summary>Which classes and boards do you teach?</summary><div class="ans">We teach CBSE and ICSE board students from Class 1 to Class 12.</div></details>
     <details><summary>Which subjects are available?</summary><div class="ans">Class 1–5: all subjects. Class 6–8: Math, Science and English. Class 9–12: Physics, Maths, Chemistry, Biology, Accountancy, BST (Business Studies), Economics and English.</div></details>
     <details><summary>Are English classes available?</summary><div class="ans">Yes, English classes are available.</div></details>
@@ -283,22 +470,15 @@
   <div class="wrap cbox">
     <div class="info">
       <div class="head" style="margin-bottom:20px"><h2>Visit or message us</h2></div>
-      <p><b>Address:</b> Sadhana Sadan B-140, UPSIDC Navipur, Near Gauri Hospital, Kanpur Dehat , U.P. (India) – 209311</p>
+      <p><b>Address:</b> Sadhana Sadan B-140, UPSIDC Navipur, Near Gauri Hospital, Kanpur (D), U.P. (India) – 209311</p>
       <p><b>Phone / WhatsApp:</b> <a href="tel:+918829956645">+91 88299 56645</a></p>
       <p><b>Email:</b> <a href="mailto:alpinecareerinstitute@gmail.com" style="color:var(--blue)">alpinecareerinstitute@gmail.com</a></p>
       <p><b>Instagram:</b> <a data-insta href="#" style="color:var(--blue)">@alpinecareerinstitute</a></p>
       <p><b>Founder:</b> Amit Singh Bhadouria</p>
       <!-- ✏️ TIMINGS APNE HISAAB SE BADLO -->
       <p><b>Timings:</b> Mon – Sat, 8 AM – 8 PM</p>
-     <p>
-  <a
-    href="https://www.google.com/maps/dir/?api=1&destination=Alpine%20Career%20Institute%2C%20Kanpur%20Dehat%2C%20Uttar%20Pradesh"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="color:var(--blue);font-weight:700">
-    📍 View on Google Maps📍 →
-  </a>
-</p>
+
+      <p class="mini"><button class="btn small" id="vcf" type="button">📇 Save our number</button> <button class="btn small ghost2" id="share" type="button">📤 Share with friends</button></p>
     </div>
     <form id="form">
       <input id="fname" placeholder="Your name" required>
@@ -309,11 +489,33 @@
     </form>
   </div>
   <div class="wrap mapbox">
-    <iframe title="ALPINE Career Institute on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.1406516718794!2d79.97870297441973!3d26.354312383866404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399db6cb858eb4d5%3A0xeb896237aee6a957!2sAlpine%20career%20institute!5e0!3m2!1sen!2sin!4v1792501627816!5m2!1sen!2sin%22"></iframe>
-  </div>
+   <iframe title="ALPINE Career Institute on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.1406516718794!2d79.97870297441973!3d26.354312383866404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399db6cb858eb4d5%3A0xeb896237aee6a957!2sAlpine%20career%20institute!5e0!3m2!1sen!2sin!4v1792501627816!5m2!1sen!2sin%22"></iframe></div>
 </section>
 
 <div class="mbar"><a href="tel:+918829956645">📞 Call</a><a data-wa href="#" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+
+<canvas id="fw"></canvas>
+
+<div class="dwish" id="dwish" hidden role="dialog" aria-modal="true" aria-label="Diwali wishes">
+  <div class="dbox">
+    <button class="pclose" id="dclose" type="button" aria-label="Close">✕</button>
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+    <h3>शुभ दीपावली!</h3>
+    <p class="dsub">Happy Diwali from <b>ALPINE Career Institute</b></p>
+    <p class="dmsg" id="dMsg">Tap the button to light a diya 🪔</p>
+    <button class="btn" id="dLight" type="button">🪔 Light the diya</button>
+  </div>
+</div>
+
+<div class="popup" id="popup" hidden role="dialog" aria-modal="true" aria-label="Demo class enquiry">
+  <div class="pbox">
+    <button class="pclose" id="pclose" type="button" aria-label="Close">✕</button>
+    <div class="ptag">🎓 Admissions open</div>
+    <h3>Book a demo class</h3>
+    <p>Tell us your class. We will reply on WhatsApp.</p>
+    <form id="pform"><input id="pname" placeholder="Your name" required><select id="pcls" required><option value="" disabled selected>Select class</option></select><button class="btn" type="submit">Send on WhatsApp</button></form>
+  </div>
+</div>
 
 <div class="lb" id="lb"><button class="lbn prev" aria-label="Previous">‹</button><img alt=""><button class="lbn next" aria-label="Next">›</button></div>
 
